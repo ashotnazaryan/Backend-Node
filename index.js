@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send('Hello World!');
 })
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(process.env.PORT || 4201, function () {
+  console.log('App listening on port 4201');
 })
 
 //git add .   add files stage
