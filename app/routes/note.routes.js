@@ -1,6 +1,11 @@
-module.exports = function(app, db) {
+module.exports = (app, db) => {
+
+  const ref = db.ref('/datasets');
   app.post('/notes', (req, res) => {
-    // You'll create your note here.
-    res.send('Hello')
+    ref.once("value")
+      .then((snap) => {
+        res.send(snap.val());
+      });
   });
+
 };
