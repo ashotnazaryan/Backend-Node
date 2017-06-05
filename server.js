@@ -6,7 +6,7 @@ const firebase = require('firebase');
 const admin = require("firebase-admin");
 const serviceAccount = require("./firebase-service-account.json");
 
-const port = 4201;
+const port = 3000;
 
 admin.initializeApp({
     databaseURL: 'https://gapp-def88.firebaseio.com',
