@@ -15,7 +15,7 @@ admin.initializeApp({
 
 const db = admin.database();
 
-require('./app/routes')(app, db);  
+require('./app/routes')(app, db); 
 
 app.listen(port, () => {
   console.log('We are live on ' + port);
