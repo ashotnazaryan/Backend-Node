@@ -25,3 +25,5 @@ app.get('/', (req, res) => {
 //git commit -m "commit message"   commit to local
 //git push -u origin   push to origin
 //git push heroku master   push to heroku
+
+//git remote -v
