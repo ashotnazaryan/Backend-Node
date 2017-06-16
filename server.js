@@ -6,7 +6,11 @@ const firebase = require('firebase');
 const admin = require("firebase-admin");
 const serviceAccount = require("./firebase-service-account.json");
 
+<<<<<<< HEAD
 const port = 1234;
+=======
+const port = 5000;
+>>>>>>> 35245ef391c1b4ecd18b591e6c1d53134fb4d9bb
 
 admin.initializeApp({
     databaseURL: 'https://gapp-def88.firebaseio.com',
@@ -15,7 +19,7 @@ admin.initializeApp({
 
 const db = admin.database();
 
-require('./app/routes')(app, db);  
+require('./app/routes')(app, db); 
 
 app.listen(port, () => {
   console.log('We are live on ' + port);
