@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const Promise = require('promise');
+const cors = require('cors');
 const firebase = require('firebase');
 const admin = require("firebase-admin");
 const serviceAccount = require("./firebase-service-account.json");
@@ -20,6 +21,8 @@ app.listen(process.env.PORT || 5000);
 app.get('/', (req, res) => {
   res.send('App works!');
 });
+
+app.use(cors());
 
 //git add .   add files stage
 //git commit -m "commit message"   commit to local
